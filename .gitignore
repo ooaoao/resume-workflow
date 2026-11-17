@@ -1,0 +1,12 @@
+/.venv/
+/workspace.json
+/.env
+/.env.*
+/data/
+/resume-data/
+/resume-demo/
+/resume-intake-demo/
+/build/
+/dist/
+*.egg-info/
+__pycache__/

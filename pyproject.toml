@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-workflow-next"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["PyMuPDF>=1.25", "PyYAML>=6"]
+
+[project.scripts]
+resume-workflow = "resume_workflow.cli:main"
+
+[tool.setuptools.package-data]
+resume_workflow = ["02_模板/*", "renderer/*.mjs"]
+
+[tool.setuptools.packages.find]
+include = ["resume_workflow*"]
